@@ -51,3 +51,21 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
+
+var modal4 = document.getElementById("glub-pop-up");
+var btn4 = document.getElementById("glub-button");
+var span4 = document.getElementById("glub-close");
+
+btn4.onclick = function() {
+  modal4.style.display = "block";
+}
+
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal4.style.display = "none";
+  }
+}
