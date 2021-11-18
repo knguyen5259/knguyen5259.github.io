@@ -123,3 +123,39 @@ window.onclick = function(event) {
     modal7.style.display = "none";
   }
 }
+
+const modal8 = document.getElementById("balnibarbi-pop-up");
+const btn8 = document.getElementById("balnibarbi-button");
+const span8 = document.getElementById("balnibarbi-close");
+
+btn8.onclick = function() {
+  modal8.style.display = "block";
+}
+
+span8.onclick = function() {
+  modal8.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal8.style.display = "none";
+  }
+}
+
+const modal9 = document.getElementById("japan-pop-up");
+const btn9 = document.getElementById("japan-button");
+const span9 = document.getElementById("japan-close");
+
+btn9.onclick = function() {
+  modal9.style.display = "block";
+}
+
+span9.onclick = function() {
+  modal9.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal9.style.display = "none";
+  }
+}

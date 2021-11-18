@@ -1,13 +1,4 @@
-.line {
-    background-color: brown;
-    height: 20px;
-    width: 10px;
-    margin: 50px;
-}
 
-.downsize {
-    width: 100px;
-}
 
 /* The Modal (background) */
 .modal {
@@ -45,4 +36,11 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
