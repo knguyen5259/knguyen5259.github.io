@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-   <title>Keenan's Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <title>Keenan's Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
+<div class="columns is-centered main">
+    <div class="column is-one-fifth grey-background">
         <div class="header">
             <h1 class="title">
                 HWOC Independent Reading Project Website
@@ -18,104 +19,123 @@
             </h2>
         </div>
 
-       <div class="downsize">
-           <img src="./england.png" alt="England">
-           <span class="text">
-               England
-           </span>
-       </div>
-
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-
         <div class="downsize">
-            <img src="./ship.jpg" alt="Ship">
+            <img alt="England" src="./england.png">
+            <button id="england-button">
+                England
+            </button>
         </div>
 
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
 
         <div class="downsize ">
-            <img src="./lilliput.jpg" alt="Lilliput">
-            <button id="lilliput-button">
-               Lilliput & Blefuscu
-           </button>
+            <img alt="Lilliput" src="./lilliput.jpg">
+            <button class="vertical-center" id="lilliput-button">
+                Lilliput & Blefuscu
+            </button>
         </div>
 
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
 
         <div class="downsize ">
-            <img src="./lilliput.jpg" alt="Brobdingnag">
+            <img alt="Brobdingnag" src="./lilliput.jpg">
             <button id="brobdingnag-button">
                 Brobdingnag
             </button>
         </div>
-       
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
 
         <div class="downsize ">
-            <img src="./lilliput.jpg" alt="Laputa">
+            <img alt="Laputa" src="./lilliput.jpg">
             <button id="laputa-button">
                 Laputa
             </button>
         </div>
 
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-
         <div class="downsize ">
-            <img src="./lilliput.jpg" alt="Glubbdubdrib">
+            <img alt="Glubbdubdrib" src="./lilliput.jpg">
             <button id="glub-button">
                 Glubbdubdrib
             </button>
         </div>
-       
-    </div>
 
-    <div id="lilliput-pop-up" class="modal">
-        <div class="modal-content">
-            <span id="lilliput-close">&times;</span>
-            <h2 class="subtitle">
-                Lilliput & Blefuscu
-            </h2>
+        <div class="downsize ">
+            <img alt="Luggnagg" src="./lilliput.jpg">
+            <button id="lug-button">
+                Luggnagg
+            </button>
+        </div>
+
+        <div class="downsize ">
+            <img alt="Luggnagg" src="./lilliput.jpg">
+            <button id="hou-button">
+                The Land of Houyhnhnms
+            </button>
         </div>
     </div>
+</div>
 
-    <div id="brobdingnag-pop-up" class="modal">
-        <div class="modal-content">
-            <span id="brobdingnag-close">&times;</span>
-            <h2 class="subtitle">
-                Brobdingnag
-            </h2>
-        </div>
+<div class="modal" id="england-pop-up">
+    <div class="modal-content">
+        <span id="england-close">&times;</span>
+        <h2 class="subtitle">
+            England
+        </h2>
     </div>
+</div>
 
-   <div id="laputa-pop-up" class="modal">
-        <div class="modal-content">
-            <span id="laputa-close">&times;</span>
-            <h2 class="subtitle">
-                Laputa
-            </h2>
-        </div>
+<div class="modal" id="lilliput-pop-up">
+    <div class="modal-content">
+        <span id="lilliput-close">&times;</span>
+        <h2 class="subtitle">
+            Lilliput & Blefuscu
+        </h2>
     </div>
-   
-    <div id="glub-pop-up" class="modal">
-      <div class="modal-content">
-          <span id="glub-close">&times;</span>
-          <h2 class="subtitle">
-              Glubbdubdrib
-          </h2>
-    </div>
+</div>
 
-   
-    <script src="./index.js"></script>
+<div class="modal" id="brobdingnag-pop-up">
+    <div class="modal-content">
+        <span id="brobdingnag-close">&times;</span>
+        <h2 class="subtitle">
+            Brobdingnag
+        </h2>
+    </div>
+</div>
+
+<div class="modal" id="laputa-pop-up">
+    <div class="modal-content">
+        <span id="laputa-close">&times;</span>
+        <h2 class="subtitle">
+            Laputa
+        </h2>
+    </div>
+</div>
+
+<div class="modal" id="glub-pop-up">
+    <div class="modal-content">
+        <span id="glub-close">&times;</span>
+        <h2 class="subtitle">
+            Glubbdubdrib
+        </h2>
+    </div>
+</div>
+
+<div class="modal" id="lug-pop-up">
+    <div class="modal-content">
+        <span id="lug-close">&times;</span>
+        <h2 class="subtitle">
+            Luggnagg
+        </h2>
+    </div>
+</div>
+
+<div class="modal" id="hou-pop-up">
+    <div class="modal-content">
+        <span id="hou-close">&times;</span>
+        <h2 class="subtitle">
+            The Land of Houyhnhnms
+        </h2>
+    </div>
+</div>
+
+<script src="./index.js"></script>
 
 </body>
 
